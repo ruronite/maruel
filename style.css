@@ -352,7 +352,8 @@ footer div p {
     }
     
     #banner figure {
-        max-width: 1080px;
+        /*max-width: 1080px;*/
+        height: max-content;
         
     }
 
@@ -392,6 +393,7 @@ footer div p {
     }
 }
 
+
 @media only screen and (max-width: 1210px){
     header {
         padding: auto 8px;
@@ -419,15 +421,23 @@ footer div p {
     #banner figure {
         width: 100%;
         margin-bottom: 16px;
+        margin-right: 0px;
     }
 
     #banner .info  {
         width: 100%;
-    }
-
-    
+    }  
 
 }
+
+
+@media only screen and (min-width:1147px) and (max-width: 1210px){
+    #banner figure {
+        max-width: 1080px;
+        border: 3px solid red;
+    }
+}
+
 
 @media only screen and (max-width: 950px) {
     .all-products {
